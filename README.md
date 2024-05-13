@@ -4,3 +4,8 @@ Bonus 1
 Mostrate il conteggio alla rovescia in pagina;
 Bonus 2
 Aggiungete un bottone che interrompe il count down e mostra il messaggio;
+
+- Creo una funzione setTimeout di 10000ms (10s) che mi va a prendere la funzione buonAnno il compito della quale è rimuovere la class = "hide" dall'html
+
+- Utilizzo la funzione asincrona setInterval per richiamare la funzione decreaseTime ogni secondo e decrementare il contatore da 10 a 0
+---- Una volta che il contatore raggiunge lo 0 utilizzo clearIntervalper fermare la funzione e aggiungere la classe "hide" al contatore
