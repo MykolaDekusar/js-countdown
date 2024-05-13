@@ -9,3 +9,5 @@ Aggiungete un bottone che interrompe il count down e mostra il messaggio;
 
 - Utilizzo la funzione asincrona setInterval per richiamare la funzione decreaseTime ogni secondo e decrementare il contatore da 10 a 0
 ---- Una volta che il contatore raggiunge lo 0 utilizzo clearIntervalper fermare la funzione e aggiungere la classe "hide" al contatore
+
+- Aggiungo un eventlistener al bottone che al click mi ferma la funzione setInterval, la fa sparire e mi mostra la scritta buonAnno
