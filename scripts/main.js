@@ -1,6 +1,5 @@
 'use strict';
 let contatore = 10;
-let click = 0;
 const timer = document.getElementById('countDown');
 const mostraBuonAnno = document.getElementById('buonAnno');
 const stopTimer = document.getElementById('stop');
@@ -11,20 +10,15 @@ stopTimer.addEventListener('click', function () {
     mostraBuonAnno.classList.remove('hide');
 })
 
-
-decreaseTime();
-const counter = setInterval(decreaseTime, 980);
-setTimeout(buonAnno, 10000);
+const counter = setInterval(decreaseTime, 1000);
 function decreaseTime() {
     if (contatore === 0) {
         clearInterval(counter);
         timer.classList.add('hide');
+        mostraBuonAnno.classList.remove('hide');
     }
+    console.log(contatore);
     timer.innerText = contatore;
     contatore--;
-    console.log(contatore);
 }
 
-function buonAnno() {
-    mostraBuonAnno.classList.remove('hide');
-}
